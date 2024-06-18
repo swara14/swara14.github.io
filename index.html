@@ -25,5 +25,60 @@
         </div>
     </div>
 
+    <!-- ------------about------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images\WhatsApp_Image_2024-06-18_at_16.19.43_3e6f0f36-removebg-preview.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me!</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac vulputate leo. 
+                        Curabitur auctor, lorem id facilisis tincidunt, justo purus vestibulum purus, at venenatis
+                        nulla ipsum eget eros. Quisque lacinia, elit ut venenatis euismod, erat mi viverra tortor, 
+                        nec malesuada justo est vel ligula.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link">Skills</p>
+                            <p class="tab-links">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" on-click="opentab('skills')" id="skills">
+                            <ul>
+                                <li><span>UI?UX</span><br>Designing Web App Interfaces</li>
+                                <li><span>Web Development</span><br>Web App Development</li>
+                                <li><span>App Development</span><br>Building Android/iOS Apps</li>
+                            </ul>
+                        </div>
+
+
+                        <div class="tab-contents" on-click="opentab('education')" id="education">
+                            <ul>
+                                <li><span>B.Tech - IIIT Delhi</span><br>Computer Science with Applied Mathematics</li>
+                                <li><span>School - ISWK, Oman</span><br>High School</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+        var tablinks = document.getElementsByClassName(tab-links);
+        var tabcontents = document.getElementsByClassName(tab-contents);
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablinks.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tablinks.classList.remove("active-tab")
+            }
+        }
+    
+    </script>
+
 </body>
 </html>
