@@ -12,12 +12,14 @@
         <div class="container">
             <nav>
                 <img src="images/logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>UI UX Designer</p>
@@ -35,32 +37,41 @@
                     <img src="images\WhatsApp_Image_2024-06-18_at_16.19.43_3e6f0f36-removebg-preview.png">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">About Me!</h1><br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac vulputate leo. 
-                        Curabitur auctor, lorem id facilisis tincidunt, justo purus vestibulum purus, at venenatis
-                        nulla ipsum eget eros. Quisque lacinia, elit ut venenatis euismod, erat mi viverra tortor, 
-                        nec malesuada justo est vel ligula.</p>
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p> Hi! I am a 3rd year student studying in Indraprastha Institue of Information Technology, Delhi, pursuing BTech. with majors in
+                        in Computer Science and Applied Mathematics.
+                    </p>
 
                         <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links active-link" onclick="opentab('skills')">Technical Skills</p>
+                            <!-- <p class="tab-links" onclick="opentab('technologies')">Technologies</p> -->
+                            <p class="tab-links" onclick="opentab('education')">Non-Technical Skills</p>
                         </div>
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
-                                <li><span>UI?UX</span><br>Designing Web App Interfaces</li>
-                                <li><span>Web Development</span><br>Web App Development</li>
-                                <li><span>App Development</span><br>Building Android/iOS Apps</li>
+                                <li><i class="fa-brands fa-python"></i>  Python</li>
+                                <li><i class="fa-solid fa-c"></i> C/C++</li>
+                                <li><i class="fa-brands fa-java"></i> Java</li>
+                                <li><i class="fa-brands fa-html5"></i> HTML/CSS/JS</li>
+                                <li><i class="fa-brands fa-linux"></i> Bash/Linux</li>
+                                <li><i class="fa-solid fa-code-branch"></i> Git / Github</li>
                             </ul>
                         </div>
 
                         <div class="tab-contents" id="education">
                             <ul>
-                                <li><span>B.Tech - IIIT Delhi</span><br>Computer Science with Applied Mathematics</li>
-                                <li><span>School - ISWK, Oman</span><br>High School</li>
+                                <li>Communication / Public Speaking</li>
+                                <li>Problem Solving</li>
+                                <li>Critical Thinking</li>
+                                <li>Leadership</li>
+                                <li>Reasoning</li>
                             </ul>
                         </div>
                 </div>
             </div>
+
+            <a href="https://in.linkedin.com/in/swara-parekh-3600a5256" class="btn1">See More</a>
+            
         </div>
     </div>
 
@@ -72,71 +83,59 @@
                 <div class="projects">
                     <img src="images/work-1.png">
                     <div class="layer">
-                        <h3>Social Media app</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur recusandae quidem
-                             expedita repellat quas aperiam aliquid. Aut accusamus at, repellat quis saepe dolore 
-                             voluptates et iure autem ea quae incidunt.</p>
-                             <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Stick-Hero Game Clone</h3>
+                        <p>Clone of the popular game - Stick Hero, using OOPs principle.<br>Game flow illustrated using UML class and Use Case diagram.</p>
+                             <a href="https://github.com/swara14/StickHero"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
 
                 <div class="projects">
                     <img src="images/work-2.png">
                     <div class="layer">
-                        <h3>Social Media app</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur recusandae quidem
-                             expedita repellat quas aperiam aliquid. Aut accusamus at, repellat quis saepe dolore 
-                             voluptates et iure autem ea quae incidunt.</p>
-                             <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Meal-Craft</h3>
+                        <p>A web application that allows users to fetch randomly generated recipes using API and display recipes for user specified ingredients.</p>
+                             <a href="https://github.com/swara14/Meal-Craft"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
 
                 <div class="projects">
                     <img src="images/work-3.png">
                     <div class="layer">
-                        <h3>Social Media app</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur recusandae quidem
-                             expedita repellat quas aperiam aliquid. Aut accusamus at, repellat quis saepe dolore 
-                             voluptates et iure autem ea quae incidunt.</p>
-                             <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Simple Shell</h3>
+                        <p>The simple shell program is a basic Unix shell that allows users to interactively execute commands, including both single commands and piped commands, and also run commands from script files.</p>
+                             <a href="https://github.com/swara14/Simple_Shell"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
 
                 <div class="projects">
-                    <img src="images/work-1.png">
+                    <img src="images/work-4.png">
                     <div class="layer">
-                        <h3>Social Media app</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur recusandae quidem
-                             expedita repellat quas aperiam aliquid. Aut accusamus at, repellat quis saepe dolore 
-                             voluptates et iure autem ea quae incidunt.</p>
-                             <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Simple Multithreader</h3>
+                        <p>The provided program facilitates the parallelization of computations through multi-threading. It includes functions for 1D (vector) and 2D (matrix) parallel loops, utilizing Pthreads. <br>The code measures and outputs execution times, enhancing performance by applying user-defined lambda functions to indices or pairs in specified ranges concurrently.</p>
+                             <a href="https://github.com/swara14/Simple_Multithreader"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
 
                 <div class="projects">
-                    <img src="images/work-2.png">
+                    <img src="images/work-5.jpeg">
                     <div class="layer">
-                        <h3>Social Media app</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur recusandae quidem
-                             expedita repellat quas aperiam aliquid. Aut accusamus at, repellat quis saepe dolore 
-                             voluptates et iure autem ea quae incidunt.</p>
-                             <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Library Management System</h3>
+                        <p>The Library Management System is a Java-based CLI application which uses OOP principles that allows librarians and library members to manage books, members, borrow and return books, and handle fines.</p>
+                             <a href="https://github.com/swara14/Library-Management-System.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
 
                 <div class="projects">
-                    <img src="images/work-3.png">
+                    <img src="images/work-6.png">
                     <div class="layer">
-                        <h3>Social Media app</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur recusandae quidem
-                             expedita repellat quas aperiam aliquid. Aut accusamus at, repellat quis saepe dolore 
-                             voluptates et iure autem ea quae incidunt.</p>
-                             <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>CityRadar WebApp</h3>
+                        <p>Designed to provide weather and news information. Displays title, description, publication date, and content for each news article for the United States</p>
+                             <a href="https://github.com/swara14/CityRadar"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
 
-            <a href="#" class="btn">See More</a>
+            <a href="https://github.com/swara14" class="btn">See More</a>
         </div>
     </div>
 
@@ -150,18 +149,21 @@
                     <p><i class="fa-regular fa-envelope"></i>swaraparek1405@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i>+91 9974298812</p>
                     <div class="social-icons">
-                        <a href=""><i class="fa-brands fa-github"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/swara14"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://in.linkedin.com/in/swara-parekh-3600a5256"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://mail.google.com/mail/u/0/?fs=1&to=swara22524@iiitd.ac.in.in&tf=cm"><i class="fa-regular fa-envelope"></i></a>
                     </div>
                     <a href="images/SwaraParekh_Resume (11).pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
@@ -186,6 +188,39 @@
             document.getElementById(tabname).classList.add("active-tab")
         }
 
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-150px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzj9xUhPpL30Jt_ASYQtcHNbebN3Be34d0gt_83Ot6RmLO2g0JPNYFucW-6lqSHwqUD/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },500)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
     </script>
 
 
